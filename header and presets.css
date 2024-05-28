@@ -1,0 +1,139 @@
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px; 
+}
+::-webkit-scrollbar-thumb {
+    background: #003E26;
+    width: 10px; 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 158, 0);
+}
+
+
+
+/* texts_&_fonts */
+@font-face {
+    font-family: 'OptimaCyr';
+    src: url('font/optima-cyr.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OptimaCyr';
+    src: url('font/optima-cyr-bold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+span, h1, h2, h3, h4, h5, p, li {
+    font-family: 'OptimaCyr','Calibri';
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 36px;
+}
+h5 {
+    font-size: 40px;
+}
+.green_txt {
+    color: #003E26;
+}
+.dijon_txt {
+    color: #645524;
+}
+/* texts_&_fonts */
+
+
+
+
+/* structure */
+body {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding: 1%;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    top: 0;
+    left: 0;
+}
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #address {
+            text-align: center;
+            flex: 1;
+        }
+            #address span {
+                font-weight: normal;
+            }
+
+        #logo {
+            flex: 1;
+            display: flex;
+            max-width: 320px;
+            height: auto;
+        }
+            #logo img {
+                width: 100%;
+                height: auto;
+        }
+
+        #phone {
+            text-align: center;
+            flex: 1;
+        }
+            #phone span {
+                font-weight: normal;
+            }
+
+    #navigation {
+        background-color: rgb(255, 255, 255);
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        padding: 1% 30%;
+        
+    }
+
+        .href_nav {
+            text-decoration: none;
+            line-height: 0px;
+            padding: 0px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+/* structure */
+
+
+
+
