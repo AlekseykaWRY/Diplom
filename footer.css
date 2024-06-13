@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    height: 500px;
+    
+   
+}
+#map {
+    flex-grow: 1.5;
+}
+#card_contact {
+    background-color: rgba(237, 221, 188, 1);
+    padding-left: 4%;
+    flex-grow: 1;
+}
+#card_contact  h5 {
+    color: rgba(0, 64, 43, 1);
+    text-transform: uppercase;
+    margin: 5% 0;
+}
+#card_contact p {
+    color: rgba(2, 93, 63, 1);
+    margin: 0% 0;
+    line-height: 20%;
+}
