@@ -13,6 +13,9 @@ a:hover {
     color: rgb(0, 158, 0);
 }
 
+html {
+    scroll-behavior: smooth; 
+}
 
 
 /* texts_&_fonts */

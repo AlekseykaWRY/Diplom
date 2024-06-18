@@ -21,3 +21,52 @@
 //     });
 // });
 
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const typeOfService = document.querySelector('.type_of_service');
+const types = document.querySelectorAll('.type');
+
+let index = 0;
+const maxIndex = types.length - 3; 
+
+prevBtn.addEventListener('click', () => {
+    if (index > 0) {
+        index--;
+        updateSlider();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (index < maxIndex) {
+        index++;
+        updateSlider();
+    }
+});
+
+function updateSlider() {
+    const offset = -index * (types[0].offsetWidth + 75); // Width + margin
+    typeOfService.style.transform = `translateX(${offset}px)`;
+}
+
+
+
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.classList.add('show');
+        scrollToTopBtn.classList.remove('hide');
+    } else {
+        scrollToTopBtn.classList.add('hide');
+        scrollToTopBtn.classList.remove('show');
+    }
+}
+
+
+scrollToTopBtn.onclick = function() {
+    document.body.scrollTop = 0; // Для Safari
+    document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+}
