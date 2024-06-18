@@ -25,12 +25,14 @@ body{
     background-color: #003E26;
     margin-bottom: 25px;
     border-radius: 0 5px 5px 0;
+    margin-left: -20px;
 }
 .yellow_line {
     width: 66%;
     height: 6px;
     background-color: #C3AC58;
     border-radius: 0 5px 5px 0;
+    margin-left: -20px;
 }
     
 
@@ -39,7 +41,6 @@ body{
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         background-image: url('/image/Vector1.svg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,33 +49,20 @@ body{
             display: flex;
             align-self: center;
             flex-direction: column;
-            flex-grow: 1;
-            
+            flex: 1;
+            margin-right: 15%;
         }
             .slogan {
-                margin: 0 10% 10% 0%;
                 line-height: 80px;
                 font-size: larger;
                 color: #003E26;
+                margin-left: 100px;
             }
                 .slogan h2{
                     font-size: 48px;
                     font-weight: 600;
                 }
-            #slider1 div:nth-child(1) .green_line {
-                width: 80%;
-                height: 12px;
-                margin-bottom: 50px;
-            }
-            #slider1 div:nth-child(1) .yellow_line {
-                width: 69%;
-                height: 8px;
-            }
-            #slider1 div:nth-child(2) {
-                display: flex;
-                justify-content: center;
-                flex-grow: 4;
-            }
+
 
     
     .about_us {
@@ -240,10 +228,6 @@ body{
         
         display: flex;
         flex-direction: column;
-        height: 900px;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
         .choice_num {
             display: flex;
@@ -305,12 +289,11 @@ body{
                 }
                 .cosmetic div:nth-child(2) div picture{
                     display: flex;
+                    flex: 1;
+                    flex-basis: 50%;
                     justify-content: center;
-                    width: 40%;
-                    height: 40%;
-                    
-                    
                 }
+
 
 
 
@@ -473,5 +456,15 @@ body{
             }
             #card_contact{
                 flex-basis: 100%;
+            }
+            #slider1 div:nth-child(1){
+                flex-basis: 100%;
+                margin:0;
+            }
+            .slogan{
+                margin:0;
+            }
+            #card_contact{
+                padding: 40px;
             }
         }
