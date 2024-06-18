@@ -21,9 +21,6 @@
 
 footer {
     display: flex;
-    height: 500px;
-    
-   
 }
 #map {
     flex-grow: 1.5;
